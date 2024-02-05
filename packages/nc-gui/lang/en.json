@@ -661,6 +661,9 @@
     }
   },
   "activity": {
+    "setEndDate": "Set end date",
+    "calendar": "Calendar",
+    "viewSettings": "View settings",
     "openInANewTab": "Open in a new tab",
     "copyIFrameCode": "Copy IFrame code",
     "onCondition": "On Condition",
