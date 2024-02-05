@@ -697,6 +697,7 @@ const {
   },
   bulkUpdateRows,
   fillHandle,
+  view,
 )
 
 function scrollToRow(row?: number) {

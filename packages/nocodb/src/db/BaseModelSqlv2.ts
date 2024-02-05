@@ -1328,7 +1328,7 @@ class BaseModelSqlv2 {
   public async mmList(
     { colId, parentId },
     args: { limit?; offset?; fieldsSet?: Set<string> } = {},
-    selectAllRecords = false
+    selectAllRecords = false,
   ) {
     const { where, sort, ...rest } = this._getListArgs(args as any);
     const relColumn = (await this.model.getColumns()).find(
