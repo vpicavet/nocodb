@@ -422,6 +422,10 @@
     }
   },
   "labels": {
+    "previousYear": "Previous Year",
+    "previousMonth": "Previous Month",
+    "nextMonth": "Next Month",
+    "nextYear": "Next Year",
     "organiseBy": "Organise by",
     "heading1": "Heading 1",
     "heading2": "Heading 2",
