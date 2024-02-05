@@ -20231,6 +20231,13 @@
               "$ref": "#/components/schemas/CalendarColumn"
             }
           },
+          "calendar_range": {
+            "type": "array",
+            "description": "Calendar Date Range",
+            "items": {
+              "$ref": "#/components/schemas/CalendarRange"
+            }
+          },
           "meta": {
             "$ref": "#/components/schemas/Meta",
             "description": "Meta Info for Kanban"
@@ -20418,7 +20425,7 @@
             "type": "array",
             "description": "Calendar Columns",
             "items": {
-              "$ref": "#/components/schemas/CalendarDateRange"
+              "$ref": "#/components/schemas/CalendarRange"
             }
           },
           "meta": {
