@@ -422,6 +422,7 @@
     }
   },
   "labels": {
+    "organizeRecordsBy": "Organize records by",
     "heading1": "Heading 1",
     "heading2": "Heading 2",
     "heading3": "Heading 3",
@@ -466,7 +467,7 @@
     "singularLabel": "Singular Label",
     "pluralLabel": "Plural Label",
     "selectDateField": "Select a date field",
-    "selectEndDateField": "Select end date field",
+    "endDateField": "End date field",
     "optional": "(Optional)",
     "clickToMake": "Click to make",
     "visibleForRole": "visible for role:",
