@@ -41,20 +41,20 @@ const onChange = (value: string) => {
 <template>
   <a-select
     v-model:value="vModel"
-    :placeholder="placeholder"
-    class="nc-select"
-    :dropdown-class-name="dropdownClassName"
-    :show-search="showSearch"
-    :filter-option="filterOption"
-    :dropdown-match-select-width="dropdownMatchSelectWidth"
     :allow-clear="allowClear"
-    :loading="loading"
     :disabled="loading"
+    :dropdown-class-name="dropdownClassName"
+    :dropdown-match-select-width="dropdownMatchSelectWidth"
+    :filter-option="filterOption"
+    :loading="loading"
+    :placeholder="placeholder"
+    :show-search="showSearch"
+    class="nc-select"
     @change="onChange"
   >
     <template #suffixIcon>
       <GeneralLoader v-if="loading" />
-      <GeneralIcon v-else icon="arrowDown" class="text-gray-800 nc-select-expand-btn" />
+      <GeneralIcon v-else class="text-gray-800 nc-select-expand-btn" icon="arrowDown" />
     </template>
     <slot />
   </a-select>
@@ -78,7 +78,7 @@ const onChange = (value: string) => {
   height: fit-content;
   .ant-select-selector {
     box-shadow: 0px 5px 3px -2px rgba(0, 0, 0, 0.02), 0px 3px 1px -2px rgba(0, 0, 0, 0.06);
-    @apply border-1 border-gray-200 !rounded-lg;
+    @apply border-1 border-gray-200 rounded-lg;
   }
 
   .ant-select-selection-item {
