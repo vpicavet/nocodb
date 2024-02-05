@@ -1378,7 +1378,6 @@ class BaseModelSqlv2 {
       qb.limit(+rest?.limit || 25);
     }
     qb.offset(selectAllRecords ? 0 : +rest?.offset || 0);
-    
 
     const children = await this.execAndParse(qb, await childTable.getColumns());
     const proto = await (
