@@ -23212,6 +23212,8 @@
       },
       "NestedLinkUnlinkReq": {
         "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
         "items": {
           "type": "object",
           "properties": {
@@ -23221,9 +23223,12 @@
             },
             "rowId": {
               "type": "string"
+            },
+            "fk_related_model_id":{
+              "type": "string"
             }
           },
-          "required": ["operation", "rowId"]
+          "required": ["operation", "rowId", "fk_related_model_id"]
         }
       }
     },

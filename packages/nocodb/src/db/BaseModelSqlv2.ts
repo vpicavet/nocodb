@@ -1328,6 +1328,7 @@ class BaseModelSqlv2 {
   public async mmList(
     { colId, parentId },
     args: { limit?; offset?; fieldsSet?: Set<string> } = {},
+    selectAllRecords = false
   ) {
     const { where, sort, ...rest } = this._getListArgs(args as any);
     const relColumn = (await this.model.getColumns()).find(
@@ -1373,7 +1374,9 @@ class BaseModelSqlv2 {
     await this.applySortAndFilter({ table: childTable, where, qb, sort });
 
     // todo: sanitize
-    qb.limit(+rest?.limit || 25);
+    if (!selectAllRecords) {
+      qb.limit(+rest?.limit || 25);
+    }
     qb.offset(+rest?.offset || 0);
 
     const children = await this.execAndParse(qb, await childTable.getColumns());
