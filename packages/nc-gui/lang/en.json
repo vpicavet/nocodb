@@ -422,7 +422,7 @@
     }
   },
   "labels": {
-    "organizeBy": "Organize by",
+    "organizeRecordsBy": "Organize records by",
     "heading1": "Heading 1",
     "heading2": "Heading 2",
     "heading3": "Heading 3",
@@ -1044,6 +1044,7 @@
       "tooltip_desc": "A single record from table ",
       "tooltip_desc2": " can be linked with a single record from table "
     },
+    "noRecordsFound": "No records found",
     "noRecordsAreLinkedFromTable": "No records are linked from table",
     "noRecordsLinked": "No records linked",
     "recordsLinked": "records linked",
